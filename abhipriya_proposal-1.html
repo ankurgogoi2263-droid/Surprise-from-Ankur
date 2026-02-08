@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Abhipriya ❤️</title>
+<style>
+body {
+  background: #fff0f5;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 40px;
+  overflow: hidden;
+}
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 24px;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
+.message {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-size: 18px;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+
+<div class="message">
+<p><strong>Abhipriya,</strong></p>
+<p>
+aji moi bhal paw buli koileu kom hobo.<br>
+Tumar hahi, tumar kotha, aru tumar logot thaka protitu khon<br>
+moi din-bhor bhabi thaku.<br><br>
+
+Tumi mur monor ekdom nishabd jogotot ahi<br>
+sobtu hundor kori dila.<br><br>
+
+Moi tumak bhal paw—hohaj bhabe, huddho bhabe.<br>
+Jodi tumar monot eitu ekei bhabona ase,<br>
+tente moi tumar haat dhori<br>
+aji aru agami dinot tumar logot thakibo bisaru.<br><br>
+
+<strong>Tumi mur MANUHJONI hoba ne?</strong><br>
+<strong>I love you ❤️</strong>
+</p>
+</div>
+
+<script>
+for (let i = 0; i < 20; i++) {
+  let heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "💖";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (3 + Math.random() * 5) + "s";
+  document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
